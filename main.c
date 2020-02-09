@@ -51,6 +51,7 @@ int main() {
 
     }
     printf("nombre de fichiers sql trouves:%d",count);
+    fclose(fp);
     closedir(dir);
 
     return EXIT_SUCCESS;
