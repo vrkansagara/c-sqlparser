@@ -31,6 +31,14 @@ int main() {
         fclose(crashfp);
         return EXIT_FAILURE;
     }
+    fputs("TRUNCATE person;\n",newfp);
+    fputs("TRUNCATE client;\n",newfp);
+    fputs("TRUNCATE worker;\n",newfp);
+    fputs("TRUNCATE log;\n",newfp);
+    fputs("TRUNCATE orders;\n",newfp);
+    fputs("TRUNCATE service;\n",newfp);
+    fputs("TRUNCATE subscription;\n",newfp);
+
     while ((ent = readdir (dir))!= NULL)
     {
         if (strstr(ent->d_name,".sql")) {
@@ -50,10 +58,10 @@ int main() {
         }
 
     }
-    printf("nombre de fichiers sql trouves:%d",count);
+
     fclose(fp);
     closedir(dir);
-
+    printf("nombre de fichiers sql trouves:%d",count);
     return EXIT_SUCCESS;
 }
 

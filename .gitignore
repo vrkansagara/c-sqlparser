@@ -1,8 +1,4 @@
-cmake-build-debug/CMakeFiles
-cmake-build-debug/cmake_install.cmake
-cmake-build-debug/CMakeCache.txt
-cmake-build-debug/Makefile
-cmake-build-debug/sqlparserflex.exe
+cmake-build-debug/*
 .idea/*
 crash.log
 new.sql
